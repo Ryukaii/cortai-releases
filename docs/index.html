@@ -120,6 +120,8 @@
     box-shadow: 0 2px 6px -1px rgba(89,201,122,.5);
   }
   .pill-rec::before { content: "✓"; font-size: 11px; }
+  /* `display: inline-flex` sobrescreve o [hidden] do UA — força esconder de volta */
+  .pill-rec[hidden] { display: none; }
 
   .btn {
     display: flex; align-items: center; justify-content: center; gap: 8px;
